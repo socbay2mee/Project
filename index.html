@@ -5,23 +5,23 @@
 		<link rel="stylesheet" href ="3.style.css"/> 
 	  
 		<script type="text/javascript">
-			function Moden() {
+			function Batden() {
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo").innerHTML = xhttp.responseText;
-						document.getElementById('myImage').src='https://image.flaticon.com/icons/svg/248/248092.svg';
+						document.getElementById("myImage"src="https://image.flaticon.com/icons/svg/248/248092.svg";
 					}
 					};
 				xhttp.open("GET", "moden.php", true);
 				xhttp.send();
 			}
-			function Tatden() {
+			function Tatden(){
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo").innerHTML = xhttp.responseText;
-						document.getElementById('myImage').src='https://image.flaticon.com/icons/svg/222/222545.svg';
+						document.getElementById("myImage").src="https://image.flaticon.com/icons/svg/222/222545.svg";
 					}
 					};
 				xhttp.open("GET", "tatden.php", true);
@@ -30,11 +30,12 @@
 		</script>
    </head>
    <body>
-		<p id="demo"></p>
-		<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Moden();">
+		
+		<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden();">
 
 		<img id="myImage" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
 
-		<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Tatden();">
+		<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden();">
+		<p id="demo"></p>
 	</body>
 </html>
