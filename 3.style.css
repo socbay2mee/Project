@@ -4,6 +4,15 @@ button {
 body{
 	
 }
+.thietbi {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 100px;
+   border: 1px solid black;
+   background-image: url("a.png");
+} 
 @media all and (max-width: 320px) {
    body {
       background: #e7e7e7;
