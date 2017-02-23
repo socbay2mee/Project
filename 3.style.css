@@ -4,3 +4,20 @@ button {
 body{
 	
 }
+@media all and (max-width: 320px) {
+   body {
+      background: #e7e7e7;
+   }
+}
+@media only screen and (min-width: 320px) and (max-width: 860px) {...}
+/* Dành cho điện thoại */
+@media all and (min-width: 320px) {...<span style="line-height: 1.5;">}</span>
+ 
+/* Dành cho máy tính bảng chiều dọc */
+@media all and (min-width: 600px) {...}
+ 
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) {...}
+ 
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {...}
