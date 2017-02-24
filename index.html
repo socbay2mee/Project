@@ -2,47 +2,71 @@
 <html>
    <head>
 		<title>Control device</title>
+		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" href ="3.style.css"/> <!--Link toi file CSS -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Khai bao the meta dung cho reponsive-->
 		
 		<script type="text/javascript">
-			function Batden() {
+			function Batden1() {
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
-						document.getElementById("demo").innerHTML = xhttp.responseText;
-						document.getElementById('myImage').src='https://image.flaticon.com/icons/svg/222/222545.svg';
+						document.getElementById("demo1").innerHTML = xhttp.responseText;
+						document.getElementById('myImage1').src='https://image.flaticon.com/icons/svg/222/222545.svg';
 					}
 					};
-				xhttp.open("GET", "batden.php", true);
+				xhttp.open("GET", "batden1.php", true);
 				xhttp.send();
 			}
-			function Tatden(){
+			function Tatden1(){
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
-						document.getElementById("demo").innerHTML = xhttp.responseText;
-						document.getElementById('myImage').src='https://image.flaticon.com/icons/svg/248/248092.svg';
+						document.getElementById("demo1").innerHTML = xhttp.responseText;
+						document.getElementById('myImage1').src='https://image.flaticon.com/icons/svg/248/248092.svg';
 					}
 					};
-				xhttp.open("GET", "tatden.php", true);
+				xhttp.open("GET", "tatden1.php", true);
 				xhttp.send();
 			}
+			function Batden2() {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (xhttp.readyState == 4 && xhttp.status == 200) {
+						document.getElementById("demo2").innerHTML = xhttp.responseText;
+						document.getElementById('myImage2').src='https://image.flaticon.com/icons/svg/222/222545.svg';
+					}
+					};
+				xhttp.open("GET", "batden2.php", true);
+				xhttp.send();
+			}
+			function Tatden2(){
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (xhttp.readyState == 4 && xhttp.status == 200) {
+						document.getElementById("demo2").innerHTML = xhttp.responseText;
+						document.getElementById('myImage2').src='https://image.flaticon.com/icons/svg/248/248092.svg';
+					}
+					};
+				xhttp.open("GET", "tatden2.php", true);
+				xhttp.send();
+			}
+			
 		</script>
    </head>
    <body>
 		<div class="thietbi">
-			<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden();">
+			<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden1();">
 			<img id="myImage" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
-			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden();">
-			<p id="demo"></p>
+			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden1();">
+			<p id="demo1"></p>
 		</div>
 		
 		<div class="thietbi">
-			<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden();">
+			<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden2();">
 			<img id="myImage" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
-			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden();">
-			<p id="demo"></p>
+			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden2();">
+			<p id="demo2"></p>
 		</div>
 	</body>
 </html>
