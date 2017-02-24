@@ -26,4 +26,4 @@ while(1):
      time.sleep(2)
    else:
      # Loi :(
-     print("Loi khong the doc tu cam bien DHT11 :(\n")import Adafruit_DHT
+     print("Loi khong the doc tu cam bien DHT11 :(\n")
