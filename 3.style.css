@@ -13,6 +13,9 @@ body{
    border: 1px solid black;
    background-image: url("a.png");
 } 
+#logospkt{
+	float:left;
+}
 @media all and (max-width: 320px) {
    body {
       background: #e7e7e7;
