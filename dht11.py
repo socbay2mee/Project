@@ -13,7 +13,7 @@ pin_sensor = 14
 
 print ("RASPI.VN Demo cam bien do am DHT 11");
 
-while(1):
+#while(1):
    # Doc Do am va Nhiet do tu cam bien thong qua thu vien Adafruit_DHT
    # Ham read_retry se doc gia tri Do am va Nhiet do cua cam bien
    # neu khong thanh cong se thu 15 lan, moi lan cach nhau 2 giay.
