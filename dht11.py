@@ -20,10 +20,10 @@ while(1):
    do_am, nhiet_do = Adafruit_DHT.read_retry(chon_cam_bien, pin_sensor);
    
    # Kiem tra gia tri tra ve tu cam bien (do _am va nhiet_do) khac NULL
-   if do_am is not None and nhiet_do is not None:
-     print ("NNhiet Do = {0:0.1f}  Do Am = {1:0.1f}\n").format(nhiet_do, do_am);
-     print ("RASPI.VN cho 2 giay de tiep tuc do ...\n");
-     time.sleep(2)
-   else:
-     # Loi :(
-     print("Loi khong the doc tu cam bien DHT11 :(\n");
+   # if do_am is not None and nhiet_do is not None:
+     # print ("NNhiet Do = {0:0.1f}  Do Am = {1:0.1f}\n").format(nhiet_do, do_am);
+     # print ("RASPI.VN cho 2 giay de tiep tuc do ...\n");
+     # time.sleep(2)
+   # else:
+    # Loi :(
+     # print("Loi khong the doc tu cam bien DHT11 :(\n");
