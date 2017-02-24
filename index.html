@@ -51,12 +51,22 @@
 				xhttp.open("GET", "tatden2.php", true);
 				xhttp.send();
 			}
+			function get_nhiet_do(){
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (xhttp.readyState == 4 && xhttp.status == 200) {
+						document.getElementById("demo3").innerHTML = xhttp.responseText;
+					}
+					};
+				xhttp.open("GET", "dht11.php", true);
+				xhttp.send();
+			}
 			
 		</script>
    </head>
    <body>
 		<div>
-			<img src="spkt.png" alt="hcmute.edu.vn" width="590" height="135">
+			<img id ="logospkt" src="spkt.png" alt="hcmute.edu.vn" width="590" height="135">
 		</div><br>	 
 		<div class="thietbi">
 			<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden1();">
@@ -70,6 +80,10 @@
 			<img id="myImage2" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
 			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden2();">
 			<p id="demo2"></p>
+		</div>
+		
+		<div class ="thietbi" onmouseover = "get_nhiet_do();">		 
+			<p id="demo3"></p>
 		</div>
 	</body>
 </html>
