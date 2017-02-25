@@ -91,15 +91,15 @@ define("userName", "root");
 define("password", "nightsky");
 
 
-function ConnectToSql() {
-	$conn = mysqli_connect(serverName, userName, password);
+
+	$conn = mysql_connect(serverName, userName, password);
 	if (!$conn)
-	    die("Connection failed: " . mysqli_connect_error()) . PHP_EOL;
+	    die("Connection failed: " );
 	else
-		 echo "Connection to mysql success !" . PHP_EOL;
+		 echo "Connection to mysql success !" ;
 
 	return $conn;
-}
+
 
 ?>
 
