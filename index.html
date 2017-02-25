@@ -56,7 +56,7 @@
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo3").innerHTML = xhttp.responseText;
-						document.getElementById('myImage2').src='https://image.flaticon.com/icons/svg/248/248092.svg';
+						
 					}
 					};
 				xhttp.open("GET", "dht11.php", true);
@@ -84,6 +84,8 @@
 		<div class ="thietbi" >		 
 			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="getnhietdo();">
 			<p id="demo3"></p>
+			<h1>Temperature: {{"{0:0.1f}".format(temp) }}°F</h1>
+            <h1>Humidity: {{"{0:0.1f}".format(hum)}}%</h1>  
 
 		</div>
 	</body>

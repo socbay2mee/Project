@@ -1,4 +1,4 @@
-
+from flask import render_template
 import Adafruit_DHT
 import RPi.GPIO as GPIO
 import time
