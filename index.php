@@ -105,7 +105,7 @@
 				}
 				while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
 				{
-					echo "Nhiet do:{$row['TRANGTHAI']}  <br> ".;
+					echo "Nhiet do:{$row['TRANGTHAI']}  <br> ";
 				} 
 				$sql = 'SELECT TRANGTHAI
 						FROM DEVICE
@@ -118,7 +118,7 @@
 				}
 				while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
 				{
-					echo "Do am: {$row['TRANGTHAI']} <br> ".;
+					echo "Do am: {$row['TRANGTHAI']} <br> ";
 				} 
 				echo "Lay du lieu thanh cong\n";
 				mysql_close($conn);
