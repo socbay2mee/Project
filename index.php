@@ -105,7 +105,7 @@
 				}
 				while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
 				{
-					echo "Nhiet do: :{$row['TRANGTHAI']}  <br> ".;
+					echo "Nhiet do:{$row['TRANGTHAI']}  <br> ".;
 				} 
 				$sql = 'SELECT TRANGTHAI
 						FROM DEVICE
