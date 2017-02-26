@@ -84,8 +84,11 @@
 		<div class ="thietbi" >		 
 			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="getnhietdo();">
 			<p id="demo3"></p>
-			
-			<?php
+
+		</div>
+	</body>
+</html>
+<?php
 $dbhost = 'localhost:3306';
 $dbuser = 'root';
 $dbpass = 'nightsky';
@@ -130,7 +133,3 @@ while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
 echo "Lay du lieu thanh cong\n";
 mysql_close($conn);
 ?>
-
-		</div>
-	</body>
-</html>
