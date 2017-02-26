@@ -84,28 +84,57 @@
 		<div class ="thietbi" >		 
 			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="getnhietdo();">
 			<p id="demo3"></p>
+			
 			<?php
 
-$SERVER = "localhost";
+				<?php
+$dbhost = 'localhost:3306';
+$dbuser = 'root';
+$dbpass = 'nightsky';
+$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+if(! $conn )
+{
+  die('Khong the ket noi: ' . mysql_error());
+}
+$sql = 'SELECT TRANGTHAI
+        FROM DEVICE
+		WHERE THIETBI="NHIETDO"';
 
-$USERNAME = "root";
+mysql_select_db('sinhvien');
+$retval = mysql_query( $sql, $conn );
+if(! $retval )
+{
+  die('Khong the lay du lieu: ' . mysql_error());
+}
+while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
+{
+    echo "nhietdo :{$row['TRANGTHAI']}  <br> ".
+        //"doam: {$row['TRANGTHAI']} <br> ".
+         "--------------------------------<br>";
+} 
 
-$PASSWORD = "nightsky";
+$sql = 'SELECT TRANGTHAI
+        FROM DEVICE
+		WHERE THIETBI="DOAM"';
 
-$conn = mysql_connect($SERVER, $USERNAME, $PASSWORD);
-
-if ( !$conn ) {
-
-//Không kết nối được, thoát ra và báo lỗi
-
-die("không nết nối được vào MySQL server");
-
-} //end if
-else
-die (" thanh cong");
-
-
+mysql_select_db('sinhvien');
+$retval = mysql_query( $sql, $conn );
+if(! $retval )
+{
+  die('Khong the lay du lieu: ' . mysql_error());
+}
+while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
+{
+    echo //"nhietdo :{$row['TRANGTHAI']}  <br> ".
+         "doam: {$row['TRANGTHAI']} <br> ".
+         "--------------------------------<br>";
+} 
+echo "Lay du lieu thanh cong\n";
+mysql_close($conn);
 ?>
+
+
+			?>
 
 		</div>
 	</body>
