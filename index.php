@@ -70,14 +70,14 @@
 		</div>  <br/>	
 		<div class="thietbi">
 			<img src="icon/switch_off.png" style="width:50px" onclick="Tatden1();">
-			<img id="myImage1" src="icon/off.png" style="width:50px">
+			<img id="myImage1" src="icon/off.png" style="width:100px">
 			<img src="icon/switch_on.png" style="width:50px" onclick="Batden1();">
 			<p id="demo1"></p>
 		</div>
 		
 		<div class="thietbi">
 			<img src="icon/switch_off.png" style="width:50px" onclick="Tatden2();">
-			<img id="myImage2" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:70px">
+			<img id="myImage2" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
 			<img src="icon/switch_on.png" style="width:50px" onclick="Batden2();">
 			<p id="demo2"></p>
 		</div>	
