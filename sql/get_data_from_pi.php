@@ -1,5 +1,5 @@
 <?php
-	echo "Nhiet do duoc cap nhat";
+	//echo "Nhiet do duoc cap nhat";
 	exec('sudo python /var/www/html/Project/sql/post_data_to_pi.py');
 	$dbhost = 'localhost:3306';
 	$dbuser = 'root';
