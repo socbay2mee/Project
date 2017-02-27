@@ -64,7 +64,7 @@
 			}			
 		</script>
    </head>
-   <body onmousemove="getnhietdo();">
+   <body >
 		<div>
 			<img id ="logospkt" src="icon/spkt.png" alt="hcmute.edu.vn" width="590" height="135">
 		</div>  <br/>	
@@ -81,8 +81,8 @@
 			<img src="icon/switch_on.png" style="width:50px" onclick="Batden2();">
 			<p id="demo2"></p>
 		</div>	
-		<div class ="thietbi" >		 
-			<img src="icon/switch_on.png" style="width:50px" onclick="getnhietdo();">
+		<div class ="thietbi" onmousemove="getnhietdo();"> 		 
+			<img src="icon/switch_on.png" style="width:50px" ">
 			<p id="demo3"></p>						
 		</div>
 	</body>
