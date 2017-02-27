@@ -78,7 +78,7 @@
 		<div class="thietbi">
 			<img src="icon/switch_off.png" style="width:50px" onclick="Tatden2();">
 			<img id="myImage2" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
-			<img src="icon/switch_on.png" style="width:50px" onclick="Batden2();">
+			<img src="icon/switch_on.png" style="width:40px" onclick="Batden2();">
 			<p id="demo2"></p>
 		</div>	
 		<div class ="thietbi" >		 
