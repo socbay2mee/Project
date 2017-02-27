@@ -10,7 +10,6 @@ pin_sensor = 14
 
 print ("RASPI.VN Demo cam bien do am DHT 11");
 do_am, nhiet_do = Adafruit_DHT.read_retry(chon_cam_bien, pin_sensor);
-
 # Open database connection
 db = MySQLdb.connect("localhost","root","nightsky","sinhvien" )
 
@@ -21,7 +20,7 @@ cursor.execute("DROP TABLE IF EXISTS DEVICE")
 # Create table as per requirement
 sql = """CREATE TABLE DEVICE (
          THIETBI  CHAR(20) NOT NULL,
-         TRANGTHAI FLOAT(4,2))"""
+         TRANGTHAI FLOAT(3,1))"""
 
 cursor.execute(sql)
 sql = "INSERT INTO DEVICE(THIETBI, \
