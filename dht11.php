@@ -1,5 +1,5 @@
 <?php
-	echo "Nhiet do duoc cap nhat ";
+	echo "Nhiet do duoc cap nhat ";<br>
 	exec('sudo python /var/www/html/Project/nhietdo_sql.py');
 	$dbhost = 'localhost:3306';
 	$dbuser = 'root';
