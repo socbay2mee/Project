@@ -82,7 +82,7 @@
 			<p id="demo2"></p>
 		</div>	
 		<div class ="thietbi" onmouseover="getnhietdo();"> 		 
-			<img src="icon/switch_on.png" style="width:50px" ">
+			<img src="icon/switch_on.png" style="width:50px">
 			<p id="demo3"></p>						
 		</div>
 	</body>
