@@ -82,7 +82,7 @@
 			<p id="demo2"></p>
 		</div>	
 		<div class ="thietbi" >		 
-			<img src="icon/on.png" style="width:30px" onclick="getnhietdo();">
+			<img src="icon/on.png" style="width:40px" onclick="getnhietdo();">
 			<p id="demo3"></p>			
 			<?php
 				$dbhost = 'localhost:3306';
