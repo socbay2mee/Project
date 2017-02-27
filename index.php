@@ -81,8 +81,8 @@
 			<img src="icon/switch_on.png" style="width:50px" onclick="Batden2();">
 			<p id="demo2"></p>
 		</div>	
-		<div class ="thietbi" onmouseover="getnhietdo();"> 		 
-			<img src="icon/switch_on.png" style="width:50px">
+		<div class ="thietbi" > 		 
+			<img src="icon/switch_on.png" style="width:70px" onclick="getnhietdo();">
 			<p id="demo3"></p>						
 		</div>
 	</body>
