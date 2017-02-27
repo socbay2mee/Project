@@ -34,7 +34,7 @@
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo2").innerHTML = xhttp.responseText;
-						document.getElementById('myImage2').src='icon/on.eps';
+						document.getElementById('myImage2').src='https://image.flaticon.com/icons/svg/222/222545.svg';
 					}
 					};
 				xhttp.open("GET", "batden2.php", true);
@@ -45,7 +45,7 @@
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo2").innerHTML = xhttp.responseText;
-						document.getElementById('myImage2').src='icon/off.pnp';
+						document.getElementById('myImage2').src='https://image.flaticon.com/icons/svg/248/248092.svg';
 					}
 					};
 				xhttp.open("GET", "tatden2.php", true);
@@ -77,7 +77,7 @@
 		
 		<div class="thietbi">
 			<img src="icon/switch_off.png" style="width:50px" onclick="Tatden2();">
-			<img id="myImage2" src="icon/off.png" style="width:100px">
+			<img id="myImage2" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
 			<img src="icon/switch_on.png" style="width:50px" onclick="Batden2();">
 			<p id="demo2"></p>
 		</div>	
