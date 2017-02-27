@@ -64,7 +64,7 @@
 			}			
 		</script>
    </head>
-   <body  ononline="getnhietdo();">
+   <body >
 		<div>
 			<img id ="logospkt" src="icon/spkt.png" alt="hcmute.edu.vn" width="590" height="135">
 		</div>  <br/>	
