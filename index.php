@@ -12,7 +12,7 @@
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo1").innerHTML = xhttp.responseText;
-						document.getElementById('myImage1').src='https://image.flaticon.com/icons/svg/222/222545.svg';
+						document.getElementById('myImage1').src='icon/on.png';
 					}
 					};
 				xhttp.open("GET", "batden1.php", true);
@@ -23,7 +23,7 @@
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo1").innerHTML = xhttp.responseText;
-						document.getElementById('myImage1').src='https://image.flaticon.com/icons/svg/248/248092.svg';
+						document.getElementById('myImage1').src='icon/off.png';
 					}
 					};
 				xhttp.open("GET", "tatden1.php", true);
@@ -34,7 +34,7 @@
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo2").innerHTML = xhttp.responseText;
-						document.getElementById('myImage2').src='https://image.flaticon.com/icons/svg/222/222545.svg';
+						document.getElementById('myImage2').src='icon/on.eps';
 					}
 					};
 				xhttp.open("GET", "batden2.php", true);
@@ -45,7 +45,7 @@
 				xhttp.onreadystatechange = function() {
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 						document.getElementById("demo2").innerHTML = xhttp.responseText;
-						document.getElementById('myImage2').src='https://image.flaticon.com/icons/svg/248/248092.svg';
+						document.getElementById('myImage2').src='icon/off.pnp';
 					}
 					};
 				xhttp.open("GET", "tatden2.php", true);
@@ -69,20 +69,20 @@
 			<img id ="logospkt" src="spkt.png" alt="hcmute.edu.vn" width="590" height="135">
 		</div>  <br/>	
 		<div class="thietbi">
-			<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden1();">
-			<img id="myImage1" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
-			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden1();">
+			<img src="icon/switch_off.png" style="width:50px" onclick="Tatden1();">
+			<img id="myImage1" src="icon/off.png" style="width:100px">
+			<img src="icon/switch_on.png" style="width:50px" onclick="Batden1();">
 			<p id="demo1"></p>
 		</div>
 		
 		<div class="thietbi">
-			<img src="http://www.flaticon.com/premium-icon/icons/svg/284/284116.svg" style="width:50px" onclick="Tatden2();">
-			<img id="myImage2" src="https://image.flaticon.com/icons/svg/248/248092.svg" style="width:100px">
-			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="Batden2();">
+			<img src="icon/switch_off.png" style="width:50px" onclick="Tatden2();">
+			<img id="myImage2" src="icon/off.png" style="width:100px">
+			<img src="icon/switch_on.png" style="width:50px" onclick="Batden2();">
 			<p id="demo2"></p>
 		</div>	
 		<div class ="thietbi" >		 
-			<img src="https://image.flaticon.com/icons/svg/214/214326.svg" style="width:50px" onclick="getnhietdo();">
+			<img src="icon/on.png" style="width:30px" onclick="getnhietdo();">
 			<p id="demo3"></p>			
 			<?php
 				$dbhost = 'localhost:3306';
