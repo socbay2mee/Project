@@ -72,8 +72,8 @@ def send_email():
     msg = MIMEMultipart()
     msg['From'] = UserName
     msg['To'] = Recipient
-    msg['Subject'] = "High temperature detected on " 
-    text = "The house may be burning now. Temperature is: "
+    msg['Subject'] = "High temperature detected on " +str(datetime.now().strftime("%Y_%m_%d_%H_%M_%S.h264") )
+    text = "The house may be burning now. Temperature is: " + str(nhiet_do)
     msg.attach( MIMEText(text) ) 
     
     #part = MIMEBase("application", "octet-stream")
