@@ -16,7 +16,7 @@ body{
 }
 .thietbi {
   color: #01c0c8;
-  /* position: relative; */
+  position: relative; 
   min-height: 145px;
   max-height: 145px;
   margin: 10px 0;
