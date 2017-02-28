@@ -83,7 +83,7 @@
 			<p id="demo2"></p>
 		</div>	
 		<div class ="thietbi" > 		 
-			<img src="icon/switch_on.png" style="width:70px" setTimeout(getnhietdo, 10000)>
+			<img src="icon/switch_on.png" style="width:70px" >
 			<p id="demo3"></p>						
 		</div>
 	</body>
