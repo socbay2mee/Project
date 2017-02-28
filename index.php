@@ -72,7 +72,8 @@
 				reload_every_5p= setInterval(getnhietdo, 300000);
 				clearInterval(reload_every_5s);
 			}
-			reload_5s();
+			setTimeout(getnhietdo,10);
+			reload_5p();
 		</script>
    </head>
    <body >
