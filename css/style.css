@@ -2,7 +2,17 @@ button {
 	color: red;
 	}
 body{
-font-family: Open Sans, Arial, Tahama, sans-serif;
+  font-family: Open Sans, Arial, Tahama, sans-serif;
+  padding-top: 170px;
+  padding-bottom: 30px;
+  background: #EBEFF2;
+  position: relative;
+  padding-top: 170px;
+  padding-bottom: 30px;
+  background: #EBEFF2;
+  position: relative;
+  
+}
 }
 .thietbi {
   color: #01c0c8;
