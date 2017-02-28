@@ -82,7 +82,7 @@
 			<p id="demo2"></p>
 		</div>	
 		<div class ="thietbi" > 		 
-			<img src="icon/switch_on.png" style="width:70px" onclick="setTimeout(getnhietdo, 10000)">
+			<img src="icon/switch_on.png" style="width:70px" onmousemove="setTimeout(getnhietdo, 10000)">
 			<p id="demo3"></p>						
 		</div>
 	</body>
