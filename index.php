@@ -99,7 +99,7 @@
 			<img src="icon/switch_on.png" style="width:50px"  onclick= "reload_5s();"> 
 			<img src="icon/switch_off.png" style="width:50px" onclick= "reload_5p();">
 			<p id="demo3"></p>	
-			<p id="demo4"></p>
+			<p id="demo4">Update every 5 munites</p>
 		</div>
 	</body>
 </html>
