@@ -3,9 +3,14 @@
    <head>
 		<title>Control device</title>
 		<link rel="shortcut icon" href="icon/favicon.ico" />
-		<link rel="stylesheet" href ="css/style.css"/> <!--Link toi file CSS -->
-		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Khai bao the meta dung cho reponsive-->
 		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href ="css/style.css"/> 
+		<!-- Reponsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- JS -->
 		<script type="text/javascript">
 			function Batden1() {
 				var xhttp = new XMLHttpRequest();
