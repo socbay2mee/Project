@@ -62,7 +62,17 @@
 				xhttp.open("GET", "sql/get_data_from_pi.php", true);
 				xhttp.send();
 			}
-			setInterval(getnhietdo, 10000);
+			var reload_every_5s;
+			var reload_every_5p;
+			function reload_5s(){
+				reload_every_5s= setInterval(getnhietdo, 5000);
+				clearInterval(reload_every_5p);
+			}
+			function reload_5p(){
+				reload_every_5p= setInterval(getnhietdo, 300000);
+				clearInterval(reload_every_5s);
+			}
+			reload_5s();
 		</script>
    </head>
    <body >
@@ -83,8 +93,8 @@
 			<p id="demo2"></p>
 		</div>	
 		<div class ="thietbi" > 		 
-			<img src="icon/switch_on.png" style="width:50px"  onclick= "setInterval(getnhietdo, 10000);"> 
-			<img src="icon/switch_off.png" style="width:50px" onclick= "setInterval(getnhietdo, 300000);">
+			<img src="icon/switch_on.png" style="width:50px"  onclick= "reload_5s();"> 
+			<img src="icon/switch_off.png" style="width:50px" onclick= "reload_5p();">
 			<p id="demo3"></p>						
 		</div>
 	</body>
