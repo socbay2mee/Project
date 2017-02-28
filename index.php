@@ -62,7 +62,7 @@
 				xhttp.open("GET", "sql/get_data_from_pi.php", true);
 				xhttp.send();
 			}
-			setInterval(getnhietdo, 60000);
+			setInterval(getnhietdo, 10000);
 		</script>
    </head>
    <body >
@@ -84,7 +84,7 @@
 		</div>	
 		<div class ="thietbi" > 		 
 			<img src="icon/switch_on.png" style="width:50px"  onclick= "setInterval(getnhietdo, 10000);"> 
-			<img src="icon/switch_off.png" style="width:50px" onclick= "setInterval(getnhietdo, 60000);">
+			<img src="icon/switch_off.png" style="width:50px" onclick= "setInterval(getnhietdo, 300000);">
 			<p id="demo3"></p>						
 		</div>
 	</body>
