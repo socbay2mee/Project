@@ -67,10 +67,12 @@
 			function reload_5s(){
 				reload_every_5s= setInterval(getnhietdo, 5000);
 				clearInterval(reload_every_5p);
+				document.getElementById("demo4").innerHTML = "Update every 5 seconds";
 			}
 			function reload_5p(){
 				reload_every_5p= setInterval(getnhietdo, 300000);
 				clearInterval(reload_every_5s);
+				document.getElementById("demo4").innerHTML = "Update every 5 munites";
 			}
 			setTimeout(getnhietdo,1);
 			reload_5p();
@@ -96,7 +98,8 @@
 		<div class ="thietbi" > 		 
 			<img src="icon/switch_on.png" style="width:50px"  onclick= "reload_5s();"> 
 			<img src="icon/switch_off.png" style="width:50px" onclick= "reload_5p();">
-			<p id="demo3"></p>						
+			<p id="demo3"></p>	
+			<p id="demo4"></p>
 		</div>
 	</body>
 </html>
