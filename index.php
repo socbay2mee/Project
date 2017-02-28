@@ -62,7 +62,7 @@
 				xhttp.open("GET", "sql/get_data_from_pi.php", true);
 				xhttp.send();
 			}
-			setTimeout(getnhietdo, 1000);
+			setInterval(getnhietdo, 1000);
 		</script>
    </head>
    <body >
