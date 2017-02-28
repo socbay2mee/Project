@@ -12,7 +12,7 @@ font-family: Open Sans, Arial, Tahama, sans-serif;
   margin: 10px 0;
   padding: 20px 0 0 0;
   background-color: #fff;
-  background-repeat: repeat-x;
+/* background-repeat: repeat-x; */
   border: 1px solid #dfe4ed;
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
    /* float: left;
