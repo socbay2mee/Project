@@ -21,8 +21,8 @@ pin_sensor = 14
 GPIO.setup(4, GPIO.IN)
 GPIO.setup(17, GPIO.IN)
 
-den_1 = GPIO.input(2)
-den_2 = GPIO.input(3)
+den_1 = GPIO.input(4)
+den_2 = GPIO.input(17)
 print ("RASPI.VN Demo cam bien do am DHT 11");
 do_am, nhiet_do = Adafruit_DHT.read_retry(chon_cam_bien, pin_sensor);
 # Open database connection
