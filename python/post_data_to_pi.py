@@ -3,6 +3,7 @@ import Adafruit_DHT
 import RPi.GPIO as GPIO
 import time
 
+from datetime import datetime
 import webbrowser
 import os, subprocess
 import re, serial
@@ -72,8 +73,8 @@ def send_email():
     msg = MIMEMultipart()
     msg['From'] = UserName
     msg['To'] = Recipient
-    msg['Subject'] = "High temperature detected on " +str(datetime.now().strftime("%Y_%m_%d_%H_%M_%S.h264") )
-    text = "The house may be burning now. Temperature is: " +str(nhiet_do)
+    msg['Subject'] = "High temperature detected on " + datetime.now().strftime("%H:%M:%S %d-%m-%Y")
+    text = "The house may be burning now. Temperature is: " + str(nhiet_do)
     msg.attach( MIMEText(text) ) 
     
     #part = MIMEBase("application", "octet-stream")
