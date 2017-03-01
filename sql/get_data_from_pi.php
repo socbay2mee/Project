@@ -9,6 +9,7 @@
 		{
 			die('Khong the ket noi: ' . mysql_error());
 		}
+//--------------------------------------------------------------------------//
 		$sql = 'SELECT TRANGTHAI
 				FROM DEVICE
 				WHERE THIETBI="NHIETDO"';
@@ -22,7 +23,8 @@
 		while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
 		{
 			echo "Nhiet do:{$row['TRANGTHAI']}  <br> ";
-		} 
+		} 		
+//--------------------------------------------------------------------------//		
 		$sql = 'SELECT TRANGTHAI
 				FROM DEVICE
 				WHERE THIETBI="DOAM"';
@@ -35,6 +37,20 @@
 		while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
 		{
 			echo "Do am: {$row['TRANGTHAI']} <br> ";
+		} 			
+//--------------------------------------------------------------------------//
+		$sql = 'SELECT TRANGTHAI
+				FROM DEVICE
+				WHERE THIETBI="DEN"';
+		mysql_select_db('sinhvien');
+		$retval = mysql_query( $sql, $conn );
+		if(! $retval )
+		{
+			die('Khong the lay du lieu: ' . mysql_error());
+		}
+		while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
+		{
+			echo "DEN: {$row['TRANGTHAI']} <br> ";
 		} 
 			echo "Lay du lieu thanh cong\n";
 			mysql_close($conn);	
