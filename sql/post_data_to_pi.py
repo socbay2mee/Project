@@ -3,6 +3,7 @@ import Adafruit_DHT
 import RPi.GPIO as GPIO
 import time
 
+from datetime import datetime
 import webbrowser
 import os, subprocess
 import re, serial
@@ -17,12 +18,7 @@ from email.MIMEText import MIMEText
 chon_cam_bien = Adafruit_DHT.DHT11
 GPIO.setmode(GPIO.BCM)
 pin_sensor = 14
- 
-GPIO.setup(2, GPIO.IN)
-GPIO.setup(3, GPIO.IN) 
 
-den_1 = GPIO.input(2)
-den_2 = GPIO.input(3)
 print ("RASPI.VN Demo cam bien do am DHT 11");
 do_am, nhiet_do = Adafruit_DHT.read_retry(chon_cam_bien, pin_sensor);
 # Open database connection
@@ -41,12 +37,12 @@ cursor.execute(sql)
 sql = "INSERT INTO DEVICE(THIETBI, \
        TRANGTHAI) \
        VALUES ('%s', '%f')" % \
-       ('DEN',den_1)
+       ('DEN',0)
 cursor.execute(sql)
 sql = "INSERT INTO DEVICE(THIETBI, \
        TRANGTHAI) \
        VALUES ('%s', '%f')" % \
-       ('QUAT',den_2)
+       ('QUAT',0)
 cursor.execute(sql)
 sql = "INSERT INTO DEVICE(THIETBI, \
        TRANGTHAI) \
@@ -77,7 +73,7 @@ def send_email():
     msg = MIMEMultipart()
     msg['From'] = UserName
     msg['To'] = Recipient
-    msg['Subject'] = "High temperature detected on " +str(datetime.now().strftime("%Y_%m_%d_%H_%M_%S.h264") )
+    msg['Subject'] = "High temperature detected on " + datetime.now().strftime("%H:%M:%S %d-%m-%Y")
     text = "The house may be burning now. Temperature is: " + str(nhiet_do)
     msg.attach( MIMEText(text) ) 
     
@@ -95,6 +91,6 @@ def send_email():
     s.sendmail(UserName, Recipient, msg.as_string())
     s.close()
 
- if nhiet_do > 30:
-	send_email()
+if nhiet_do > 30:
+   send_email()
 	
