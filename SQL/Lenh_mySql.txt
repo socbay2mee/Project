@@ -1,5 +1,5 @@
 mysql -u root -p
 SHOW DATABASES;
-CREATE DATABASE testdb;
-USE testdb;
-SELECT * FROM Writers;
+CREATE DATABASE sinhvien;
+USE sinhvien;
+SELECT * FROM DEVICE;

@@ -70,7 +70,7 @@
 			var reload_every_5s;
 			var reload_every_5p;
 			function reload_5s(){
-				reload_every_5s= setInterval(getnhietdo, 1000);
+				reload_every_5s= setInterval(getnhietdo, 5000);
 				clearInterval(reload_every_5p);
 				document.getElementById("demo4").innerHTML = "Update every 5 seconds";
 			}
