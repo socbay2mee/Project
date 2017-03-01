@@ -18,7 +18,11 @@ from email.MIMEText import MIMEText
 chon_cam_bien = Adafruit_DHT.DHT11
 GPIO.setmode(GPIO.BCM)
 pin_sensor = 14
+GPIO.setup(2, GPIO.IN)
+GPIO.setup(3, GPIO.IN)
 
+den_1 = GPIO.input(2)
+den_2 = GPIO.input(3)
 print ("RASPI.VN Demo cam bien do am DHT 11");
 do_am, nhiet_do = Adafruit_DHT.read_retry(chon_cam_bien, pin_sensor);
 # Open database connection
@@ -37,12 +41,12 @@ cursor.execute(sql)
 sql = "INSERT INTO DEVICE(THIETBI, \
        TRANGTHAI) \
        VALUES ('%s', '%f')" % \
-       ('DEN',0)
+       ('DEN',den_1)
 cursor.execute(sql)
 sql = "INSERT INTO DEVICE(THIETBI, \
        TRANGTHAI) \
        VALUES ('%s', '%f')" % \
-       ('QUAT',0)
+       ('QUAT',den_2)
 cursor.execute(sql)
 sql = "INSERT INTO DEVICE(THIETBI, \
        TRANGTHAI) \
