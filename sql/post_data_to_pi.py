@@ -72,7 +72,8 @@ db.close()
 def send_email():    
     UserName = "socbay2mee@gmail.com"
     Password = "socbay2me"
-    Recipient = "thuanle.ute@gmail.com"
+    Recipient = "haugialai95@gmail.com"
+	#thuanle.ute@gmail.com
     
     msg = MIMEMultipart()
     msg['From'] = UserName
