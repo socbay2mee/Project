@@ -95,7 +95,7 @@ def send_email():
     s.login(UserName, Password)
     s.sendmail(UserName, Recipient, msg.as_string())
     s.close()
-
-if nhiet_do > 30:
-   send_email()
+while(1)
+	if nhiet_do > 30:
+		send_email()
 	
